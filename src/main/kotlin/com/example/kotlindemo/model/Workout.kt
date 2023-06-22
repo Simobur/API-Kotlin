@@ -9,8 +9,9 @@ import javax.validation.constraints.NotBlank
 /**
  * Created by rajeevkumarsingh on 05/10/17.
  */
+
 @Entity
-data class Article (
+data class Workout (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
@@ -19,5 +20,5 @@ data class Article (
 
     @get: NotBlank
     val content: String = ""
-)
 
+)
